@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.atomic.AtomicLong;
 
 import org.junit.Assert;
 import org.junit.Ignore;
@@ -104,9 +103,6 @@ public abstract class BudgetDivisionPolicyTest {
     this.__test(RunsExamples.random());
   }
 
-  /** make sure that only few full test are executed for fast execution */
-  private static final AtomicLong FULL_TESTS_FOR_FAST = new AtomicLong(2L);
-
   /**
    * test the divisions
    *
@@ -116,13 +112,7 @@ public abstract class BudgetDivisionPolicyTest {
   private final void __test(final Runs runs) {
     this.__testDirectly(runs);
     if (TestTools.FAST_TESTS) {
-      if (ThreadLocalRandom.current().nextInt(4) <= 0) {
-        if (!(FULL_TESTS_FOR_FAST.getAndDecrement() <= 0L)) {
-          return;
-        }
-      } else {
-        return;
-      }
+      return;
     }
     this.__testCompletely(runs);
   }
