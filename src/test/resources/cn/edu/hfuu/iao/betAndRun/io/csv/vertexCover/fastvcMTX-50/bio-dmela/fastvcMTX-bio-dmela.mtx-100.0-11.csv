@@ -1,0 +1,8 @@
+# command: ./fastvcMTX vcInstances/bio-dmela.mtx 1110300227 100.0 100 50
+msPassed,objective,steps
+10,2717,74
+11,2706,200
+12,2670,596
+13,2645,1150
+14,2638,1728
+15,2635,2049
