@@ -5,11 +5,10 @@
  * marmakoide@hotmail.fr, and https://github.com/marmakoide. It is included
  * here with his kind permission in a slightly refactored and modified
  * version. Dr. Devert put this code under the MIT License which is also
- * valid for the rest of this repository. He will probably eventually
- * publish a canonical and maintained version of this code in a repository
- * on GitHub under https://github.com/marmakoide. Please contact Dr. Devert
- * for any questions, in particular regarding licensing and
- * (re-)distribution.
+ * valid for the rest of this repository. Dr. Devert provides it under the
+ * MIT license at GitHub under http://github.com/marmakoide/jpack. Please
+ * contact Dr. Devert for any questions, in particular regarding licensing
+ * and (re-)distribution.
  * </p>
  * <p>
  * Neither Dr. Devert nor I assume any responsibility for anything
